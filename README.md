@@ -66,9 +66,9 @@ Ensure you have the following installed:
 1. Clone the Repository:
 
 
-           git clone https://github.com/karimosman89/iot-predictive-maintenance.git
+           git clone https://github.com/Manhquynhne/34_Bigdata.git
    
-           cd iot-predictive-maintenance
+           cd 34_Bigdata
 
 3. Install Dependencies:
 
@@ -86,17 +86,18 @@ Set model parameters in configs/model_config.yaml for training and evaluation.
 1. Start Kafka Producer: Run the kafka_producer.py script to start streaming sensor data to Kafka.
 
 
-             python scripts/kafka_producer.py
+             python data_pipeline/kafka_producer.py
+             python data_pipeline/kafka_consumer.py
 
 2. Preprocess Data: After gathering sufficient data, preprocess it for model training.
 
 
-            python scripts/preprocess_data.py
+            python data_pipeline/preprocess_data.py
 
 3. Run MLflow Experiment: Use the mlflow_experiment.py script to train and log the model.
 
 
-            python scripts/mlflow_experiment.py
+            python models/mlflow_experiment.py
 
 Check your MLflow UI at http://localhost:5000 (or configured port) to view experiment results.
 

@@ -1,0 +1,22 @@
+artifact_path: file:D:/iot-predictive-maintenance/mlruns/2/models/m-ddb2218c82c14d2887b23eeb0419af01/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.7.0
+model_id: m-ddb2218c82c14d2887b23eeb0419af01
+model_size_bytes: 199132
+model_uuid: m-ddb2218c82c14d2887b23eeb0419af01
+prompts: null
+run_id: ec75af53f22746058e90737f072b935a
+utc_time_created: '2025-12-18 10:14:40.451461'
